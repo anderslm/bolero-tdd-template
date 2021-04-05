@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.2</PackageVersion>
+    <PackageId>Bolero.Tdd.Template</PackageId>
+    <Title>Bolero TDD template</Title>
+    <Authors>Anders Ladegaard Marchsteiner</Authors>
+    <Description>A Bolero template to use for test driven development.</Description>
+    <PackageTags>dotnet-new;templates;bolero;tdd</PackageTags>
+
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="src\**;.template.config\**" Exclude="src\**\bin\**;src\**\obj\**" />
+    <Content Include="BoleroTdd.sln" />
+    <Content Include="README.md" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
+

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Login.fs" />
+        <Compile Include="Books.fs" />
+        <Compile Include="Counting.fs" />
+        <Compile Include="Main.fs" />
+    </ItemGroup>
+
+</Project>
