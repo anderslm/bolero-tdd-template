@@ -3,7 +3,7 @@ module UseCases.Main
 type Page =
     | Home
     | Counter
-    | Data
+    | Books
     
 type Message =
     | SetPage of Page

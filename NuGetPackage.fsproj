@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.2</PackageVersion>
+    <PackageVersion>1.3</PackageVersion>
     <PackageId>Bolero.Tdd.Template</PackageId>
     <Title>Bolero TDD template</Title>
     <Authors>Anders Ladegaard Marchsteiner</Authors>

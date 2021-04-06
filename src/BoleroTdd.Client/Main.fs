@@ -25,13 +25,13 @@ let view model dispatch =
         .Menu(concat [
             menuItem model Home "Home"
             menuItem model Counter "Counter"
-            menuItem model Data "Download data"
+            menuItem model Books "Download data"
         ])
         .Body(
             cond model.page <| function
             | Home -> MainTemplate.Home().Elt()
             | Counter -> Counting.view model.countingModel (dispatch << CountingMsg)
-            | Data ->
+            | Books ->
                 cond model.loginModel.signedInAs <| function
                 | Some username -> Books.view model.booksModel username (fun () -> dispatch <| LoginMsg Login.SendSignOut) (dispatch << BooksMsg)
                 | Option.None -> Login.view model.loginModel (dispatch << LoginMsg)
